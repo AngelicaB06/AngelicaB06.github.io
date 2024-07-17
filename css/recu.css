@@ -1,0 +1,66 @@
+/* recu.css */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Encabezado {
+    width: 100%;
+    overflow: hidden;
+    background-color: #4ab6e9;
+}
+body {
+    background-color: #df8a98;
+    color: #343a40;
+    font-family: Arial, sans-serif;
+}
+
+.Encabezado h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    color: #ffffff;
+    padding: 3%;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(234, 228, 228);
+}
+.form-group label {
+    font-weight: bold;
+}
+
+#resultado table {
+    background-color: #ffffff;
+}
+
+#noSolucion p {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.footer {
+    background-color: #4ab6e9;
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+.footer .col-md-6 {
+    padding: 100% 0;
+}
+
+.footer .text-right {
+    text-align: right;
+}

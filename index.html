@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluar Ecuación de 2do Grado</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recu.css">
+</head>
+<body>
+    <header class="Encabezado bg-dark text-white p-3 mb-3">
+        <div class="container mt-5">  
+            <h1 class="text-center">Evaluar Ecuación General de 2º Grado</h1>
+        </div>
+    </header>
+    <div class="container mt-5">  
+        <img src="css/ecuacion-de-segundo-grado-1.jpg" alt="SMB&N" class="img-fluid" style="max-height: 120px; display: block; margin: 0 auto;">
+
+         <form id="formulario">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="coeficienteA">Coeficiente a</label>
+                        <input type="number" class="form-control" id="coeficienteA" required placeholder="Ingresa un valor">
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="coeficienteB">Coeficiente b</label>
+                        <input type="number" class="form-control" id="coeficienteB" required placeholder="Ingresa un valor">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="coeficienteC">Coeficiente c</label>
+                        <input type="number" class="form-control" id="coeficienteC" required placeholder="Ingresa un valor">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Evaluar</button>
+        </form>
+        
+        <div id="resultado" class="mt-4" style="display: none;">
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        
+                        <th>Coeficiente a</th>
+                        <th>Coefiente b</th>
+                        <th>Coeficiente c</th>
+                        <th>x₁</th>
+                        <th>x₂</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla"></tbody>
+            </table>
+            <button class="btn btn-danger" onclick="regresar()">Regresar</button>
+        </div>
+        
+        <div id="noSolucion" class="mt-4" style="display: none;">
+            <p>La ecuación no tiene solución porque la raíz es negativa.</p>
+            <button class="btn btn-danger" onclick="regresar()">Regresar</button>
+        </div>
+        <footer class="footer bg-dark text-white p-3 mt-4">
+            <div class="container">
+                <h2 class="text-center">N°3: Barrera Gonzalez Angelica Yolotzin IC-31M</h2>
+            </div>
+        </footer>
+    </div>
+    <script src="js/recuperacion.js"></script>
+</body>
+</html>
